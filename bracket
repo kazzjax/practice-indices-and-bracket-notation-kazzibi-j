@@ -1,1 +1,24 @@
+let bookCase = [
+    ["Beloved", "It", "1984"],
+    ["Dracula", "Beowulf", "Carrie",],
+    ["Othello", "Dune", "Inferno"]
+];
+console.log("Bookcase Contents, Top Shelf: " + bookCase[0][0], bookCase[0][1], bookCase[0][2]);
+console.log("Bookcase Contents, Middle Shelf: " + bookCase[1][0], bookCase[1][1], bookCase[1][2]);
+console.log("Bookcase Contents, Bottom Shelf: " + bookCase[2][0], bookCase[2][1], bookCase[2][2]);
 
+let shelf, book;
+shelf = 0; book = 0; console.log(bookCase[shelf][book]);
+shelf = 0; book = 1; console.log(bookCase[shelf][book]);
+shelf = 0; book = 2; console.log(bookCase[shelf][book]);
+shelf = 1; book = 0; console.log(bookCase[shelf][book]);
+shelf = 1; book = 1; console.log(bookCase[shelf][book]);
+shelf = 1; book = 2; console.log(bookCase[shelf][book]);
+shelf = 2; book = 0; console.log(bookCase[shelf][book]);
+shelf = 2; book = 1; console.log(bookCase[shelf][book]);
+shelf = 2; book = 2; console.log(bookCase[shelf][book]);
+
+let middleShelf = 1;
+for (let book = 0; book < bookCase[middleShelf].length; book++) {
+    console.log(bookCase[middleShelf][book]);
+};
